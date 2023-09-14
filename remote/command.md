@@ -2,10 +2,10 @@
 
 ```bash
 
-# Displays remote branches
+# Displays ONLY remote branches
+git branch -r
     #  origin/HEAD -> origin/main
     #  origin/main
-git branch -r
 
 # Displays all branches
 git branch -a
@@ -28,4 +28,9 @@ git ls-remote
 # Fetch new branch from remote repository into local repository
 git fetch origin
 
+# Delete remote branch from LOCAL repository
+git branch --delete --remotes origin/feature-remote
+
+# Delete remote branch from REMOTE repository
+git push origin --delete feature-remote
 ```
