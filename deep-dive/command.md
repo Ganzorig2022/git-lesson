@@ -20,7 +20,7 @@ git stash clear
 git stash list
 ```
 
-#### RESTORE
+#### RESTORE the current commit
 
 ```bash
 
@@ -33,4 +33,20 @@ git reset --hard HEAD~1
 # reflog-ын жагсаалтаас тухайн log-ны id (3ab90d3)-aaр нь cүүлийн commit-ыг авчирж болно.
 git reset --hard 3ab90d3
 
+```
+
+#### RESTORE the current commit with new branch
+
+```bash
+
+git switch -c feature
+git add .
+git commit -m "feature branch added"
+git branch -D feature
+
+git reflog
+
+# reflog-ын жагсаалтаас тухайн log-ны id (3ab90d3)-aaр нь cүүлийн commit-ыг авчирж болно.
+git checkout 3ab90d3
+git switch -c feature
 ```
