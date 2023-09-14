@@ -15,7 +15,7 @@ git stash pop 0
 git stash drop 0
 
 # Бүх stash-уудыг устгана.
-git stash clear
+git stash clear 
 
 git stash list
 ```
