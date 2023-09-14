@@ -21,3 +21,16 @@ git stash list
 ```
 
 #### RESTORE
+
+```bash
+
+# Shows all reference logs
+git reflog
+
+
+git reset --hard HEAD~1
+
+# reflog-ын жагсаалтаас тухайн log-ны id (3ab90d3)-aaр нь cүүлийн commit-ыг авчирж болно.
+git reset --hard 3ab90d3
+
+```
