@@ -79,10 +79,15 @@ git rebase main
 
 #### FIX CONFLICTS
 
+- Ижил файланд ижил мөрөнд 2 branch-ыг merge хийх үед CONFLICT үүснэ.
+
 ```bash
+
+git merge feature
+
+# Accept current change or incoming change
 
 # Abort merging
 git merge --abort
 
-# Accept current change or incoming change
 ```
