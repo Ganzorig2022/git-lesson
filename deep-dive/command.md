@@ -76,3 +76,13 @@ git merge --no-ff feature
 # Main-ыг feature branch рүү авчирж ирнэ.
 git rebase main
 ```
+
+#### FIX CONFLICTS
+
+```bash
+
+# Abort merging
+git merge --abort
+
+# Accept current change or incoming change
+```
