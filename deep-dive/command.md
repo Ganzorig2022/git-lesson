@@ -1,3 +1,5 @@
+#### STASHING - temporary storage for unstaged and uncommitted changes
+
 ```bash
 
 # Анхны clean working directory лүү очно.
@@ -20,11 +22,11 @@ git stash clear
 git stash list
 ```
 
-#### RESTORE the current commit
+#### RESTORE the specific commit
 
 ```bash
 
-# Shows all reference logs
+# Shows all reference logs including deleted commits
 git reflog
 
 
@@ -68,7 +70,7 @@ git merge --no-ff feature
 
 ```
 
-#### REBASE 
+#### REBASE - change the base of commits in another branch
 
 - Rewrites code history
 
