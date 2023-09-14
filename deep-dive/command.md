@@ -65,4 +65,14 @@ git merge --squash feature
 
 # Non fast-forward merging
 git merge --no-ff feature
+
+```
+
+#### REBASE
+
+- Rewrites code history
+
+```bash
+# Main-ыг feature branch рүү авчирж ирнэ.
+git rebase main
 ```
