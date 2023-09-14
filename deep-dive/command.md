@@ -15,7 +15,7 @@ git stash pop 0
 git stash drop 0
 
 # Бүх stash-уудыг устгана.
-git stash clear 
+git stash clear
 
 git stash list
 ```
@@ -51,4 +51,18 @@ git checkout 3ab90d3 #bring back or restore the commit with DETACHED HEAD
 
 # DETACHED HEAD-ыг branch-тэй болгох
 git switch -c feature
+```
+
+#### MERGE
+
+```bash
+
+# Feature branch-ын [commit-уудтай] нь хамт main рүү merge хийнэ.
+git merge feature
+
+# Feature branch-ын [commit-уудгүйгээр] нь main рүү merge хийнэ.
+git merge --squash feature
+
+# Non fast-forward merging
+git merge --no-ff feature
 ```
