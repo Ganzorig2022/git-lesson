@@ -68,7 +68,7 @@ git merge --no-ff feature
 
 ```
 
-#### REBASE
+#### REBASE 
 
 - Rewrites code history
 
@@ -92,8 +92,20 @@ git merge --abort
 
 ```
 
-#### CHERRY PICKING
+#### CHERRY PICKING - merge only specific commit
 
 ```bash
+git switch -c feature2
 
+# file2.txt дээр өөрчлөлт оруулав.
+git add .
+git commit -m "type fixed on file2.txt"
+
+# git log-оор тухайн commit-ын ID-г (f9f1de4f6a38e9038e33060f9ffa1e98d0b66177) олж авна.
+git log
+
+# Main рүүгээ буцаж очоод, зөвхөн тухайн ганцхан commit-ыг merge хийнэ.
+git switch main
+
+git cherry pick f9f1de4f6a38e9038e33060f9ffa1e98d0b66177
 ```
