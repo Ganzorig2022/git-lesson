@@ -3,3 +3,5 @@ working on a new feature
 another awesome feature!
 
 Third feature added
+
+this is the change mage in the main branch
