@@ -3,3 +3,5 @@ working on a new feature
 another awesome feature!
 
 Third feature added
+
+I changed this in the feature branch!
